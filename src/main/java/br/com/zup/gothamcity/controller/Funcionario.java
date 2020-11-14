@@ -26,31 +26,31 @@ public class Funcionario {
 	@Autowired
 	IFuncionarioService funcionarioService;
 
-	// ok
+	
 	@PostMapping(produces = { MediaType.APPLICATION_JSON_VALUE })
 	public MensagemDTO criaFuncionario(@RequestBody FuncionarioDTO funcionarioDTO) {
 		return funcionarioService.criaFuncionario(funcionarioDTO);
 	}
 
-	// ok
+	
 	@GetMapping(path = "/{idFuncionario}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public Funcionario pesquisaFuncionario(@PathVariable Long idFuncionario) {
 		return funcionarioService.pesquisaFuncionario(idFuncionario);
 	}
 
-	// ok
+	
 	@GetMapping(produces = { MediaType.APPLICATION_JSON_VALUE })
 	public List<Funcionario> listaFucionarios() {
 		return funcionarioService.listaFuncionarios();
 	}
 
-	// ok
+	
 	@PutMapping(path = "/{idFuncionario}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public MensagemDTO alteraFuncionario(@PathVariable Long idFuncionario, @RequestBody FuncionarioDTO funcionarioDTO) {
 		return funcionarioService.alteraFuncionario(idFuncionario, funcionarioDTO);
 	}
 
-	// ok
+	
 	@DeleteMapping(path = "/{idFuncionario}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public MensagemDTO removeFuncionario(@PathVariable Long idFuncionario) {
 		return funcionarioService.removeFuncionario(idFuncionario);
