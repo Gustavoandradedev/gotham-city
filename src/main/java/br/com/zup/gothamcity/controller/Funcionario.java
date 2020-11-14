@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.zup.gothamcity.dto.AlteraFuncionarioDTO;
 import br.com.zup.gothamcity.dto.FuncionarioDTO;
 import br.com.zup.gothamcity.dto.MensagemDTO;
 import br.com.zup.gothamcity.dto.SecretariaDTO;
@@ -46,8 +47,8 @@ public class Funcionario {
 
 	
 	@PutMapping(path = "/{idFuncionario}", produces = { MediaType.APPLICATION_JSON_VALUE })
-	public MensagemDTO alteraFuncionario(@PathVariable Long idFuncionario, @RequestBody FuncionarioDTO funcionarioDTO) {
-		return funcionarioService.alteraFuncionario(idFuncionario, funcionarioDTO);
+	public MensagemDTO alteraFuncionario(@PathVariable Long idFuncionario, @RequestBody AlteraFuncionarioDTO alteraFuncionario) {
+		return funcionarioService.alteraFuncionario(idFuncionario, alteraFuncionario);
 	}
 
 	
