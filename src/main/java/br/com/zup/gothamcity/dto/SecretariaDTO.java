@@ -1,9 +1,10 @@
 package br.com.zup.gothamcity.dto;
 
-import java.util.List;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+
+import br.com.zup.gothamcity.enums.Area;
 
 public class SecretariaDTO {
 

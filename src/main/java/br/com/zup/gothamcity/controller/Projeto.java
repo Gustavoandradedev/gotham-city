@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.zup.gothamcity.dto.FuncionarioDTO;
 import br.com.zup.gothamcity.dto.MensagemDTO;
 import br.com.zup.gothamcity.dto.ProjetoDTO;
+import br.com.zup.gothamcity.dto.ProjetoFinalizadoDTO;
 import br.com.zup.gothamcity.service.IProjetoService;
 
 @RestController
@@ -47,7 +48,7 @@ public class Projeto {
 //ok
 	@PutMapping(path = "/concluido/{idProjeto}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public MensagemDTO projetoFinalizado(@PathVariable Long idProjeto,
-			@RequestBody projetoFinalizadoDTO projetoFinalizadoDTO) {
+			@RequestBody ProjetoFinalizadoDTO projetoFinalizadoDTO) {
 		return projetoService.projetoFinalizado(idProjeto, projetoFinalizadoDTO);
 	}
 }
