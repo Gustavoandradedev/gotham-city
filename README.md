@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Sistema de gerenciamento da prefeitura Gotham
 
 #Objetivo: Gerenciar o sistema de uma prefeitura pela suas área.
@@ -41,7 +40,4 @@
 
 ###Gustavo Nascimento Andrade
 
-=======
-# gotham-city
-#Teste
->>>>>>> d4aaab2408d44097e35aebce203286ace7b99eb6
+
