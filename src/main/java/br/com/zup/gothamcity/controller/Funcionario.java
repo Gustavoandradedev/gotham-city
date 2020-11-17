@@ -56,4 +56,11 @@ public class Funcionario {
 	public MensagemDTO removeFuncionario(@PathVariable Long idFuncionario) {
 		return funcionarioService.removeFuncionario(idFuncionario);
 	}
+
+
+	public void setNome(String nome) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
